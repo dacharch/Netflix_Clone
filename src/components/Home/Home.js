@@ -1,30 +1,34 @@
-import {assets} from "../../images" 
+import { assets } from "../../images/assets"
 
 import "./Home.css"
 
 const Home = () => {
   return (
-     <div className="container">
-         <div className="header">
-             <div className="header-icon">
-                  <img src={assets.} alt="icon_image" />
-                  {console.log(images[0].logo)}
-             </div>
-             <div className="header-r">
-                <div className="option_select">
-                    <select>
-                       <option>English</option>
-                       <option>Hindi</option>
-                    </select>
-                </div>
-                <div>
-                   <button>Sign In</button>
-                </div>
-                  
-             </div>
-         </div>
-     </div>
- )
+    <div className="container">
+      <nav className="nav-container">
+        <img className="logo" src={assets.logo} alt="logo-img" />
+        <div>
+          <button className="language">
+            English <img src={assets.down_icon} />
+          </button>
+          <button>Sign in</button>
+        </div>
+      </nav>
+
+      <div className="header-content">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <form className="email-signup">
+           <input type="email" placeholder="Email Address"  required/>
+           <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Home
