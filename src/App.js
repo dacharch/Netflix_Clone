@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-     <h2> neeraj Kumar</h2>
+     
       <Home />
       <Feature />
       <Question/>
