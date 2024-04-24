@@ -1,5 +1,6 @@
-import "./Question.css"
 import { useState } from "react";
+import "./Question.css";
+
 
 export const Question = () => {
   const [contentPara,  setContent] = useState(false);
@@ -10,10 +11,8 @@ export const Question = () => {
       <h2>Frequently Asked Questions</h2>
       <ul className="accordion">
         <li>
-          <label for="first">
-            What is Netflix?
-          </label>
-          <div className="content" >
+          <label for="first">What is Netflix?</label>
+          <div className="content">
             <p>
               Netflix is a streaming service that offers a wide variety of
               award-winning TV shows, movies, anime, documentaries and more – on
@@ -77,6 +76,18 @@ export const Question = () => {
           </div>
         </li>
       </ul>
+
+      <div>
+        <small>
+          Ready to watch? Enter your email to create or restart your membership.
+        </small>
+        <form className="email-signup">
+           <input type="email" placeholder="Email Address" required/>
+           <button type="submit">Get Started</button>
+
+        </form>
+      </div>
+    
     </div>
   );
 }

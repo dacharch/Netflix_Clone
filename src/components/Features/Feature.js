@@ -29,7 +29,7 @@ const Feature = () => {
             <div className="text-col">
               <h2>Download your shows to watch offline</h2>
               <p>
-                Save your favourites easily and always have something to watch.
+                Save your favorties easily and always have something to watch.
               </p>
             </div>
           </div>

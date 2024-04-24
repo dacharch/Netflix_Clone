@@ -44,4 +44,31 @@ label::after{
     transition: max-height 0.5s,padding 0.5s;
 }
 
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+.faq small{
+    font-size: 13px;
+    
+}
+
+@media only screen and(max-width:600px){
+    .faq h2{
+        font-size:20px ;
+    }
+    .accordion .content{
+        font-size:14px ;
+    }
+    .accordion li label{
+        padding:10px ;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+}
+
+
 
